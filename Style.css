@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 24px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.logo {
+  color: #f5c518; /* Giallo brillante in stile IMDb */
+}
+
+main {
+  padding: 16px;
+  max-width: 100%;
+}
+
+input#searchBar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+  padding: 14px 10px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  font-size: 12px;
+}
+
+th {
+  background-color: #2a2a2a;
+}
+
+tr:hover {
+  background-color: #262626;
+}
+
+.platform {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+  color: #fff;
+}
+
+.platform.pc {
+  background-color: #0078d7;
+}
+
+.platform.xbox {
+  background-color: #107c10;
+}
+
+.platform.playstation {
+  background-color: #003087;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+  th, td {
+    font-size: 10px;
+    padding: 10px 6px;
+  }
+
+  input#searchBar {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
